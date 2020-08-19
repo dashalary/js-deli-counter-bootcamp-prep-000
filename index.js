@@ -14,7 +14,7 @@ katzDeliLine.push(name)
  }
  
  function currentLine(katzDeliLine) {
-   peopleInLine = [];
+   const peopleInLine = [];
    if (katzDeliLine.length === 0) {
      return `The line is currently empty.`
    } else { 

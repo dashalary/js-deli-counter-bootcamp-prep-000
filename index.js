@@ -14,12 +14,13 @@ katzDeliLine.push(name)
  }
  
  function currentLine(katzDeliLine) {
+   peopleInLine = [];
    if (katzDeliLine.length === 0) {
      return `The line is currently empty.`
    } else { 
    let line = '';
    for (let i = 0; i < katzDeliLine.length; i++) {
-     const currentCustomer = `${i + 1}. ${katzDeliLine[i]}, `;
+     peopleInLine.push(`${i + 1}. ${katzDeliLine[i]}, `);
      line += currentCustomer;
    }
    return "The current line is " + line;

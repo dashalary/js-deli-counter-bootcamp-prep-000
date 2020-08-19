@@ -18,11 +18,11 @@ katzDeliLine.push(name)
    if (katzDeliLine.length === 0) {
      return `The line is currently empty.`
    } else { 
-   let line = '';
+  
    for (let i = 0; i < katzDeliLine.length; i++) {
-     peopleInLine.push(`${i + 1}. ${katzDeliLine[i]}, `);
-     line += currentCustomer;
+     peopleInLine.push(`${i + 1}. ${katzDeliLine[i]}`);
+     
    }
-   return "The current line is " + line;
+   return "The current line is " + `${peopleInLine}`;
  }
  }

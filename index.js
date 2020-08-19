@@ -23,6 +23,6 @@ katzDeliLine.push(name)
      peopleInLine.push(`${i + 1}. ${katzDeliLine[i]}`);
      
    }
-   return "The current line is " + `${peopleInLine}`;
+   return "The current line is " + peopleInLine.join(", ");
  }
  }
